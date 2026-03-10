@@ -70,7 +70,7 @@ Tabel Mobil
 
 Tabel mobil digunakan untuk menyimpan data kendaraan yang tersedia dalam sistem rental.
 
-Struktur tabel:
+## Struktur tabel:
 
 CREATE TABLE mobil(
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -93,7 +93,7 @@ status	ENUM	Status mobil (Tersedia atau Disewa)
 
 Status mobil digunakan untuk mengetahui apakah mobil sedang disewa atau masih tersedia.
 
-Tabel Akun
+## Tabel Akun
 
 Tabel akun digunakan untuk menyimpan data pengguna yang dapat mengakses sistem.
 
@@ -106,7 +106,7 @@ CREATE TABLE akun(
     role ENUM('admin','user') NOT NULL
 );
 
-Penjelasan field:
+## Penjelasan field:
 
 Field	Tipe Data	Deskripsi
 id	INT	Primary key akun
@@ -116,7 +116,7 @@ role	ENUM	Hak akses pengguna (admin atau user)
 
 Role digunakan untuk menentukan hak akses pengguna terhadap sistem.
 
-Data Awal (Initial Data)
+## Data Awal (Initial Data)
 
 Database juga memiliki data awal untuk akun pengguna.
 
@@ -124,7 +124,6 @@ INSERT INTO akun (username, password, role) VALUES
 ('admin','admin123','admin'),
 ('user','ardi123','user');
 
-Penjelasan:
 
 admin memiliki akses penuh terhadap sistem
 
@@ -144,7 +143,7 @@ tabel pembayaran
 
 yang akan menghubungkan data mobil dengan pengguna yang melakukan penyewaan.
 
-Setup Database
+## Setup Database
 
 Untuk menyiapkan database, jalankan perintah berikut di MySQL:
 
